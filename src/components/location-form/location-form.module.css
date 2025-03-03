@@ -1,0 +1,64 @@
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  margin-inline: auto;
+  margin-block: auto;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.form input {
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 0 10px 5px 5px;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.form select {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  padding: 0 10px 5px 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.form input:focus {
+  outline: 0;
+}
+
+.form input::placeholder {
+  color: white;
+}
+
+.form select:focus {
+  outline: 0;
+}
+
+.actions button:active {
+  outline: 0;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: rgba(255, 255, 255, 0.8);
+}

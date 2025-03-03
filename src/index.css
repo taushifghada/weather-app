@@ -1,0 +1,82 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --sky-blue: #47bfdf;
+  --blue: #4a91ff;
+  --red: #721c24;
+  --red-shade-2: #f8d7da;
+  --red-shade-3: #f5c6cb;
+  --black-10: rgba(0, 0, 0, 0.1);
+  --black-25: rgba(0, 0, 0, 0.25);
+  --gray: #bfbfbf;
+  --light-blue: #347bcd;
+  --light-blue-border: #6097d8;
+  --white-60: rgba(255, 255, 255, 0.6);
+
+  font-family: "Overpass";
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background: radial-gradient(var(--sky-blue), var(--blue));
+  min-height: 100vh;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+}
+
+.error p {
+  text-align: center;
+  color: var(--red);
+  padding: 10px 15px;
+  border: 1px solid var(--red-shade-3);
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: var(--red-shade-2);
+}
+
+.submitting {
+  background-color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
