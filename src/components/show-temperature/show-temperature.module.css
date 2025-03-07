@@ -1,0 +1,126 @@
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.temprature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+  position: relative;
+  background-color: var(--light-blue);
+  filter: drop-shadow(0 4px 4px var(--black-25));
+  border-radius: 20px;
+}
+
+.temprature-date-degree-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.temprature-date-degree-container h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 1;
+  position: relative;
+  filter: drop-shadow(-2.8px 5.59px 34.96px var(--black-25));
+  text-shadow: -14.2px 25.4px 39.8px var(--black-25);
+}
+
+.temprature-date-degree-container .degree,
+.temprature-date-degree-container .c-letter {
+  position: absolute;
+}
+
+.temprature-date-degree-container .degree {
+  bottom: 42px;
+  font-size: 65px;
+}
+
+.temprature-date-degree-container .c-letter {
+  font-size: 45px;
+  bottom: 71px;
+  right: -50px;
+}
+
+.temprature-date-degree-container .date {
+  text-shadow: -1.4px 2.1px 0.7px var(--black-10);
+  color: white;
+}
+
+.weather-icon {
+  /* flex: 2; */
+  display: flex;
+}
+
+.weather-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+  text-shadow: -1.4px 2.1px 0.7px var(--black-10);
+  width: 100%;
+}
+
+.weather-main-container h3 {
+  color: white;
+  background-color: var(--light-blue);
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table tr {
+  border-top: 15px solid transparent;
+}
+
+.table td {
+  color: white;
+  font-weight: 300;
+}
+
+.table td:nth-child(1) {
+  text-align: left;
+  padding-right: 30px;
+}
+
+.table td:nth-child(2) {
+  border-left: 0.5px solid white;
+  padding: 0;
+}
+
+.table td:nth-child(3) {
+  padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+  .temprature-date-degree-container h1 {
+    font-size: 60px;
+  }
+
+  .temprature-date-degree-container .degree {
+    bottom: 27px;
+    font-size: 37px;
+  }
+
+  .temprature-date-degree-container .c-letter {
+    font-size: 27px;
+    bottom: 42px;
+    left: 89px;
+  }
+}
+
+/* @media (min-width: 576px) and (max-width: 767px) {
+  .temprature-date-degree-container h1 {
+    font-size: 60px;
+  }
+} */

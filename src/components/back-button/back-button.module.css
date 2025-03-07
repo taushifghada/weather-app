@@ -1,0 +1,23 @@
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.actions button:active {
+  outline: 0;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
